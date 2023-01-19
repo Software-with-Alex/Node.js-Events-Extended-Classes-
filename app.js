@@ -1,170 +1,168 @@
-// function sayHello(name){
-//     console.log(`hello ${name}`)
-// }
+function sayHello(name){
+    console.log(`hello ${name}`)
+}
 
-// // sayHello('alex')
+// sayHello('alex')
 
 
-// console.log(window)
+console.log(window)
 
 
 
 
-// window.console.log(window); //global
+window.console.log(window); //global
 
 
-// const logger = require('./logger.js');
+const logger = require('./logger.js');
 
-// const secLogger = require('./logger');
+const secLogger = require('./logger');
 
 
 
 
-// logger('hi')
+logger('hi')
 
-// secLogger('this is the second one')
+secLogger('this is the second one')
 
 
 
-// let helloMessage = require('./logger');
+let helloMessage = require('./logger');
 
 
-// console.log(helloMessage);
+console.log(helloMessage);
 
 
 
-// const path = require('path');
+const path = require('path');
 
-// let pathObj = path.parse(__filename);
+let pathObj = path.parse(__filename);
 
 
-// console.log(path.parse(__filename))
+console.log(path.parse(__filename))
 
 
 
 
 
-// const namer = require('./logger.js');
+const namer = require('./logger.js');
 
-// namer.log('kiser')
+namer.log('kiser')
 
 
-//
-// console.log(path);console.log(module)
 
+console.log(path);console.log(module)
 
 
 
 
-// const tot = require('./tot.js')
 
+const tot = require('./tot.js')
 
 
 
 
-// console.log(tot.sum(33,88))
-// console.log(new tot.SomeMathObj('alex', 27))
-// console.log(new tot.SomeMathObj('paul', 33))
 
-// console.log(tot.PI)
+console.log(tot.sum(33,88))
+console.log(new tot.SomeMathObj('alex', 27))
+console.log(new tot.SomeMathObj('paul', 33))
 
+console.log(tot.PI)
 
-// const EventEmitter = require('events');
 
+const EventEmitter = require('events');
 
 
-// const eventEmitter = new EventEmitter();
 
-// eventEmitter.on('tutorial', () => {
-//     console.log(`tutorial event occurred`)
-// })
+const eventEmitter = new EventEmitter();
 
-// const EventEmitter = require('events');
-// const eventEmitter = new EventEmitter();
+eventEmitter.on('tutorial', () => {
+    console.log(`tutorial event occurred`)
+})
 
-// eventEmitter.on('example', (mul1,mul2) =>{
-//     console.log(`I have been emmitted ${mul1 + mul2}`)
-// });
+const EventEmitter = require('events');
+const eventEmitter = new EventEmitter();
 
-// eventEmitter.emit('example', 22,33)
+eventEmitter.on('example', (mul1,mul2) =>{
+    console.log(`I have been emmitted ${mul1 + mul2}`)
+});
 
+eventEmitter.emit('example', 22,33)
 
 
-// const EventEmitter = require('events');
 
-// const eventEmitter = new EventEmitter();
+const EventEmitter = require('events');
 
-// eventEmitter.on('divided', (div1, div2) => {
-//     console.log(`${div1 / div2}`);
-// })
+const eventEmitter = new EventEmitter();
 
+eventEmitter.on('divided', (div1, div2) => {
+    console.log(`${div1 / div2}`);
+})
 
-// eventEmitter.emit('divided', 20, 2)
 
+eventEmitter.emit('divided', 20, 2)
 
 
 
 
 
 
-// events modules in nodejs
 
+events modules in nodejs
 
-// const EventEmitter = require('events');
 
-// const eventEmitter = new EventEmitter();
+const EventEmitter = require('events');
 
-// eventEmitter.on('multiplySomething', (num1, num2) =>{
-//     console.log(`${num1 * num2}`); 
-// })
+const eventEmitter = new EventEmitter();
 
-// eventEmitter.emit('multiplySomething',33, 55);
+eventEmitter.on('multiplySomething', (num1, num2) =>{
+    console.log(`${num1 * num2}`); 
+})
 
-// eventEmitter.emit('multiplySomething',12, 9);
-// // console.log(olderPerson)
+eventEmitter.emit('multiplySomething',33, 55);
 
+eventEmitter.emit('multiplySomething',12, 9);
+// console.log(olderPerson)
 
-// class Person extends EventEmitter{
-//     constructor(name){
 
-//         super();
-//         this.name = name;
+class Person extends EventEmitter{
+    constructor(name){
+
+        super();
+        this.name = name;
         
         
-//     }
-//     get names(){
-//         return this.name;
-//     }
-// }
+    }
+    get names(){
+        return this.name;
+    }
+}
 
-// let alex = new Person('alexander hill')
+let alex = new Person('alexander hill')
 
-// console.log(alex);
+console.log(alex);
 
 
-// alex.on('name', () => {
-//     console.log(alex.name)
-// })
+alex.on('name', () => {
+    console.log(alex.name)
+})
 
-// alex.emit('name')
+alex.emit('name')
 
 
  
 
 
 
-//  const EventEmitter = require('events');
+ const EventEmitter = require('events');
 
-//  const eventEmitter = new EventEmitter();
+ const eventEmitter = new EventEmitter();
 
-//  eventEmitter.on('add',(num1, num2) => {
-//      console.log('event done');
-//  })
-
-
-//  eventEmitter.emit('add', 2, 3);
+ eventEmitter.on('add',(num1, num2) => {
+     console.log('event done');
+ })
 
 
+ eventEmitter.emit('add', 2, 3);
 
 
 
@@ -172,30 +170,32 @@
 
 
 
-// events with classes and extends
 
 
-// const EventEmitter = require('events');
-
-// const eventEmitter = new EventEmitter();
-
-// eventEmitter.on('addsomething', (num1, num2) => {
-//     console.log(` this is the anwser ${num1 + num2}`)
-// })
-
-// eventEmitter.emit('addsomething', 99, 1);
+events with classes and extends
 
 
-// class Person extends EventEmitter {
-//     constructor(name){
-//         super();
-//         this.name = name;
-//     }
-// }
+const EventEmitter = require('events');
 
-// let alex = new Person('alex');
+const eventEmitter = new EventEmitter();
 
-// alex.on()
+eventEmitter.on('addsomething', (num1, num2) => {
+    console.log(` this is the anwser ${num1 + num2}`)
+})
+
+eventEmitter.emit('addsomething', 99, 1);
+
+
+class Person extends EventEmitter {
+    constructor(name){
+        super();
+        this.name = name;
+    }
+}
+
+let alex = new Person('alex');
+
+alex.on()
 
 
 
@@ -204,35 +204,35 @@
 
 
  
-// events with classes extended
+events with classes extended
 
 
-// const EventEmitter = require('events');
+const EventEmitter = require('events');
 
-// const eventsEmitter = new EventEmitter();
+const eventsEmitter = new EventEmitter();
 
-// eventsEmitter.on('addNums', (num1, num2) => {
-//     console.log(` this correct number is : ${num1 + num2}`);
-// })
+eventsEmitter.on('addNums', (num1, num2) => {
+    console.log(` this correct number is : ${num1 + num2}`);
+})
 
-// eventsEmitter.emit('assSomething', 2,3);
+eventsEmitter.emit('assSomething', 2,3);
 
-// // now lets extend a class
+// now lets extend a class
 
-// class Person extends EventEmitter{
-//     constructor(name){
-//         super();
-//         this.name = name
-//     }
-// }
+class Person extends EventEmitter{
+    constructor(name){
+        super();
+        this.name = name
+    }
+}
 
-// let alexander = new Person('Alexander Hill');
+let alexander = new Person('Alexander Hill');
 
-// alexander.on('newName', (name) => {
-//     console.log(name)
-// })
+alexander.on('newName', (name) => {
+    console.log(name)
+})
 
-// alexander.emit('newName')
+alexander.emit('newName')
 
 
 
